@@ -3,6 +3,7 @@ Type:Static
 Guid:EE1A0152-4DAB-CABC-C8C9-E5ABB53C815E
 ParentGuid:00000000-0000-0000-0000-000000000000
 
+/Game/Core/BP_Goal.BP_Goal
 /Game/kenney_naturekit/bridge_center_stone.bridge_center_stone
 /Game/kenney_naturekit/bridge_center_stoneRound.bridge_center_stoneRound
 /Game/kenney_naturekit/bridge_center_wood.bridge_center_wood
