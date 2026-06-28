@@ -8,11 +8,18 @@ AChikenRageGameGameMode::AChikenRageGameGameMode()
 {
 	// set default pawn class to our Blueprinted character
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/PlayerChicken/BP_PlayerChicken"));
-	if (PlayerPawnBPClass.Class != NULL)
-	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
-	}
+	if (PlayerPawnBPClass.Class != NULL) DefaultPawnClass = PlayerPawnBPClass.Class;
 
-	//Set Gameplay Parameters
-	CheckpointNum = 6;
+	// Configure the GameMode to execute Tick every frame
+	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bStartWithTickEnabled = true;
+
+}
+
+void AChikenRageGameGameMode::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	// Accumulate total gameplay time spent on the level
+	Time += DeltaTime;
 }
