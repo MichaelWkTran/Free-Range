@@ -3,3 +3,11 @@ Type:Static
 Guid:DAA251A8-406A-522E-27F2-DD917E1496AF
 ParentGuid:00000000-0000-0000-0000-000000000000
 
+/Game/Obstacles/BP_CarObstacle.BP_CarObstacle
+/Game/Obstacles/BP_CarSpawner.BP_CarSpawner
+/Game/Obstacles/BP_MovingPlatform.BP_MovingPlatform
+/Game/Obstacles/BP_MovingPlatformLoop.BP_MovingPlatformLoop
+/Game/Obstacles/BP_PhysicsZone.BP_PhysicsZone
+/Game/Obstacles/BP_Portals.BP_Portals
+/Game/Obstacles/BP_Spring.BP_Spring
+/Game/Obstacles/BP_Treadmill.BP_Treadmill
